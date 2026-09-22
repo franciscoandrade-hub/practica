@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    # BUG: La variable 'nombre' no está definida, esto causará un error 500 al ejecutarse
+    nombre = "Estudiante Anonimizado"
     return f"<h1>Bienvenido al portal universitario, {nombre}!</h1>"
 
 if __name__ == '__main__':
